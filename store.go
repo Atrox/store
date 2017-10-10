@@ -23,10 +23,15 @@ func New(name string) (*Store, error) {
 	if err != nil {
 		return nil, err
 	}
+	base := filepath.Join(home, ".config", name)
 
-	return &Store{
-		Base: filepath.Join(home, ".config", name),
-	}, nil
+	// create directory
+	err = os.MkdirAll(base, os.ModePerm)
+	if err != nil {
+		return nil, err
+	}
+
+	return &Store{Base: base}, nil
 }
 
 // Get retrieves the passed in interface from the filesystem
@@ -51,11 +56,6 @@ func (s *Store) Save(i interface{}) error {
 	location := s.Path(i)
 
 	b, err := yaml.Marshal(i)
-	if err != nil {
-		return err
-	}
-
-	err = os.MkdirAll(filepath.Dir(location), os.ModePerm)
 	if err != nil {
 		return err
 	}
