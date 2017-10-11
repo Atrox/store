@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/Atrox/store.svg?style=flat-square)](https://travis-ci.org/Atrox/store)
 [![Coverage Status](https://img.shields.io/coveralls/Atrox/store.svg?style=flat-square)](https://coveralls.io/r/Atrox/store)
-[![Go Report Card](https://goreportcard.com/badge/github.com/atrox/store?style=flat-square)](https://goreportcard.com/report/github.com/atrox/store)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Atrox/store?style=flat-square)](https://goreportcard.com/report/github.com/Atrox/store)
 [![GoDoc](https://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square)](https://godoc.org/github.com/Atrox/store)
 
 > Simple, painless, zero-config configuration storage

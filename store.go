@@ -1,3 +1,4 @@
+// Package store provides a simple, painless configuration storage
 package store
 
 import (
